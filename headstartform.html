@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<head> 
+    <title> Head Start DB </title>
+</head>
+<body> 
+    <h1> DUNS for Head Start </h1>
+    <form action="hsconnect.php" method="POST"> 
+        <label for="firstname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="12" required><br><br>
+        
+        <label for="lastname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" size="12" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" size="20" required><br><br>
+
+        <label for="site"> Site: </label>
+        <input type="text" id="site" name="site" size="15"><br><br> 
+
+        <label for="agency">Agency: </label> 
+        <input type="text" id="agency" name="agency" size="15"><br><br>
+
+        <label for="hsgrant"> Select Grant: </label>
+        <select id="hsgrant" name="hsgrant"> 
+            <option value = "blank">  </option>
+            <option value = "HS"> HS </option>
+            <option value = "EHS"> EHS </option>
+            <option value = "Partnership"> Partnership </option>
+            <option value = "SingleSite"> Single Site</option>
+            <option value = "MultiSite"> Multi-Site </option>
+            <option value = "CPSSouth"> CPS South </option>
+            <option value = "CPSNorth"> CPS North </option>
+            <option value = "PI"> PI </option>
+            <option value = "PFA"> PFA </option>
+            <option value = "Other"> Other </option>
+        </select><br><br>
+
+        <label for="address"> Address: </label>
+        <input type="address" id="address" name="address" size="25"><br><br>
+
+        <label for="date"> Date: </label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <label for="participants"> Total Participants: </label>
+        <input type="text" id="participants" name="participants"><br><br> 
+
+        <h3> Activities / Services Provided  </h3>
+
+        <!-- Health Record Assessment -->
+        <label for="hlthrecord"> Health Records Provided (Y/N): </label>
+        <input type="text" id="hlthrecord" name="hlthrecord" size="2" maxlength="1"><br><br> 
+
+        <!-- Nutrition Assessment -->
+        <label for="nutrassess"> Nutritition Assessment (Y/N): </label>
+        <input type="text" id="nutrassess" name="nutrassess" size="2" maxlength="1" ><br><br> 
+
+        <!-- Final Box For Notes -->
+        <h4> Notes </h4>
+        <textarea name="notes" rows="4" cols="30"> </textarea><br><br> 
+
+        <input type="submit" value="Submit">
+      </form>
+</body>
